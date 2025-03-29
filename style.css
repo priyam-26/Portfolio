@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f8f9fa;
+}
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background: #444;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background: #444;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+.hero h1 {
+    font-size: 40px;
+}
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.section {
+    padding: 40px;
+    text-align: center;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project-card a {
+    color: black;
+    text-decoration: none;
+}
+.project-card a:hover {
+    text-decoration: underline solid;
+    color: #6a11cb;
+    transform: scale(2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
